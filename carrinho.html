@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carrinho</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="topo">
+
+        <div class="marca-central" onclick="window.location.href='index.html'">
+          <img src="imagens/logo3.jpeg" class="logo-topo">
+          
+          <h1 class="titulo-marca">
+            TIRZEP<span>BH</span>
+          </h1>
+      
+          <div class="icone-carrinho" onclick="event.stopPropagation(); window.location.href='carrinho.html'">
+            🛒 <span id="contador">0</span>
+          </div>
+        </div>
+      
+      </header>
+
+<div class="pagina-carrinho">
+
+  <div class="container-carrinho">
+
+    <h1>🛒 Seu Pedido</h1>
+
+    <div id="lista" class="lista-carrinho"></div>
+
+    <div class="pagamento-box">
+      <label>Forma de pagamento:</label>
+      <select id="pagamento" onchange="atualizarTotal()">
+        <option value="pix">PIX</option>
+        <option value="cartao">Cartão</option>
+      </select>
+    </div>
+
+    <h2 id="total"></h2>
+
+    <div class="formulario">
+      <input type="text" id="nome" placeholder="Nome completo">
+      <input type="text" id="endereco" placeholder="Endereço completo">
+      <input type="text" id="telefone" placeholder="Telefone com DDD">
+    </div>
+
+    <div class="acoes-carrinho">
+  <a href="index.html" class="btn-continuar">← Continuar comprando</a>
+
+  <p class="frete-carrinho">
+    🚚 O valor do frete será informado conforme a região de entrega em BH.
+  </p>
+
+  <button onclick="finalizar()" class="btn-finalizar" id="btnFinalizar">
+  Finalizar Pedido
+</button>
+</div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>mostrarCarrinho()</script>
+
+</body>
+</html>

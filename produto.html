@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detalhes do Produto</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="topo">
+
+        <div class="marca-central" onclick="window.location.href='index.html'">
+          <img src="imagens/logo3.jpeg" class="logo-topo">
+          
+          <h1 class="titulo-marca">
+            TIRZEP<span>BH</span>
+          </h1>
+      
+          <div class="icone-carrinho" onclick="event.stopPropagation(); window.location.href='carrinho.html'">
+            🛒 <span id="contador">0</span>
+          </div>
+        </div>
+      
+      </header>
+
+<div class="pagina-produto">
+
+  <div class="produto-container">
+
+    <img id="imgProduto" class="imagem-produto">
+
+    <div class="info-produto">
+      <h1 id="nomeProduto"></h1>
+
+      <p id="descricaoProduto" class="descricao"></p>
+
+<p class="aviso-medico">
+Produto destinado a uso sob orientação profissional.
+</p>
+
+<p class="frete-produto">
+🚚 Frete a negociar conforme região de BH.
+</p>
+
+
+
+      <div class="precos">
+        <p id="precoCartao"></p>
+        <p id="precoPix"></p>
+      </div>
+
+      <button id="btnAdicionar" class="btn-adicionar">
+        🛒 Adicionar ao Carrinho
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+<script>carregarProduto()</script>
+
+</body>
+</html>

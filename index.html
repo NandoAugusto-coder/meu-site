@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TIRZEPBH</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="topo">
+
+        <div class="marca-central" onclick="window.location.href='index.html'">
+          <img src="imagens/logo3.jpeg   " class="logo-topo">
+      
+          <div class="texto-marca">
+            <h1 class="titulo-marca">
+              TIRZEP<span>BH</span>
+            </h1>
+            <nav class="menu">
+    <a href="sobre.html" class="btn-menu sobre-btn">Sobre</a>
+  </nav>
+
+      
+            <p class="subtitulo-marca">
+              Especialistas em Peptídeos Metabólicos • Atendimento Seguro somente em BH
+            </p>
+          </div>
+      
+          <div class="icone-carrinho" onclick="event.stopPropagation(); window.location.href='carrinho.html'">
+            🛒 <span id="contador">0</span>
+          </div>
+        </div>
+      
+      </header>
+      <div class="aviso-frete-global">
+  🚚 Frete a negociar — Valor varia conforme a região de Belo Horizonte.
+</div>
+      <section class="secao-video">
+        <h2>Como aplicar Tirzepatida ou Retatrutide ZPHC</h2>
+        <p>Assista ao vídeo explicativo antes de utilizar o produto.</p>
+      
+        <div class="video-container">
+          <video controls>
+            <source src="videos/video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeo.
+          </video>
+        </div>
+      </section>
+
+<section id="banner" class="produtos">
+    <div class="secao-produtos">
+        <h2>Produtos disponíveis</h2>
+        <p>Qualidade garantida • Atendimento personalizado • Entrega segura</p>
+      </div>
+</section>
+
+<div class="produtos">
+
+  <div class="card" onclick="verProduto(1)">
+    <img src="imagens/produto_1_1.png">
+    <h3>Retatrutide ZPHC</h3>
+    <p>A partir de R$ 1350</p>
+  </div>
+
+  <div class="card" onclick="verProduto(2)">
+    <img src="imagens/produto_2_1.jpeg">
+    <h3>Lipoless 4 ampolas</h3>
+    <p>A partir de R$ 1180</p>
+  </div>
+
+  <div class="card" onclick="verProduto(3)">
+    <img src="imagens/produto_3_1.png">
+    <h3>TG ampola</h3>
+    <p>A partir de R$ 420</p>
+  </div>
+
+  <div class="card" onclick="verProduto(4)">
+    <img src="imagens/produto_4_1.png">
+    <h3>TG caixa</h3>
+    <p>A partir de R$ 1180</p>
+  </div>
+
+  <div class="card" onclick="verProduto(5)">
+    <img src="imagens/produto_5_1.png">
+    <h3>Lipoless 60mg</h3>
+    <p>A partir de R$ 1160</p>
+  </div>
+
+  <div class="card" onclick="verProduto(6)">
+    <img src="imagens/produto_6_1.png">
+    <h3>Tirzec 60mg</h3>
+    <p>A partir de R$ 1170</p>
+  </div>
+
+  <div class="card" onclick="verProduto(7)">
+    <img src="imagens/produto_7_1.png">
+    <h3>Lipoland 15mg</h3>
+    <p>A partir de R$ 420</p>
+  </div>
+
+  <div class="card" onclick="verProduto(8)">
+    <img src="imagens/produto_8_1.png">
+    <h3>Lipoless 15mg</h3>
+    <p>A partir de R$ 400</p>
+  </div>
+
+  <div class="card" onclick="verProduto(9)">
+    <img src="imagens/produto_9_1.png">
+    <h3>Retatrutide Verde</h3>
+    <p>A partir de R$ 1750</p>
+  </div>
+
+  <div class="card" onclick="verProduto(10)">
+    <img src="imagens/produto_10_1.png">
+    <h3>GHK-CU</h3>
+    <p>A partir de R$ 1450</p>
+  </div>
+
+</div>
+
+<a class="botao-carrinho" href="carrinho.html">🛒 Ver Carrinho</a>
+
+<footer class="rodape">
+  <p>© 2026 TIRZEPBH • Atendimento exclusivo em Belo Horizonte</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
